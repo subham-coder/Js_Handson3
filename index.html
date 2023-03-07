@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Programming</title>
+</head>
+<body>
+    <h1>Iteration Statements-</h1>
+    <pre><h2>Q1- Find the number of digits-</h2>
+        const Find_Digits = (N) => 
+        {
+	 let ans=0;
+	 while(N!==0){
+	   ans ++;
+	   N=Math.floor(N/10);
+	 }
+	 return ans;
+     };
+    </pre>
+
+    <pre><h2>Q2- Find the Fives- </h2>
+        const Find_Five = (N) => 
+{
+  let count=0;
+  while (N!==0){
+    let check=N%10;
+    if(check===5) {
+      count++
+    }
+    N=Math.floor(N/10)
+  }
+	  return count;
+};
+
+
+    </pre>
+   
+    <pre><h2>Q3- Find Sum-</h2>
+        const findSum = (n) => {
+            let ans=0;
+             for(i=1; i<=n; i++){
+               if(i%2===0){
+                 ans+=i;
+               }
+             }
+             return ans; 
+         }; 
+    </pre>
+
+    <pre><h2>Q4- Find the sum of the digits of a given number- </h2>
+        const Number_Sum = (N) => 
+        {
+	     let count=0,r
+  
+        while(N!==0){
+        r=N%10
+        count=count+r
+        N=Math.floor(N/10)
+        }
+       return(count)
+        };
+
+    </pre>
+
+    <pre><h2>Q5- Print the Odds- </h2>
+        const Print_Odd = (N) => 
+        {
+          
+             console.log(2);
+             for(let i=2; i<=N;i++){
+               if(i%2===1){
+                console.log(i);
+               }
+               
+             }
+             
+        }; 
+    </pre>
+
+    <pre><h2>Q6- Print the Pattern-</h2>
+        const Print_pattern = (N) => 
+        {
+        let string ="";
+        for (r=1;r<=N;r++) {
+        for(c=1;c<=r;c++) {
+          string+="*";
+        }
+        string+="\n";
+        }
+        console.log(string);
+        }; 
+    </pre>
+
+    <pre><h2>Q7- Check whether a Number is a prime or not-</h2>
+        const Prime_Check = (N) => 
+        {
+	    let factor=0;
+	    for(i=1;i<=N;i++) {
+	         if(N%i===0) {
+	         factor++;
+	        }
+	    }
+        };  
+	if(factor===2) {
+	  return "YES";
+	}
+	else {
+	  return "NO";
+	}
+	
+};
+    </pre>
+
+    <pre><h2>Q8-Print Numbers-</h2>
+        const printNumbers = (n) => {
+            for(i=1;i<=n;i++) {
+              console.log(i);
+            } 
+         };
+    </pre>
+
+    <pre><h2>Q9- Print the Table-</h2>
+        const Print_Table = (N) => 
+        {
+        for(i=1;i<=10;i++) {
+             console.log(N + " * " + i + " = " + N*i);
+            }	
+        };
+    </pre>
+</body>
+</html>
